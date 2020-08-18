@@ -9,6 +9,20 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import ReactPixel from 'react-facebook-pixel';
+import ReactGA from 'react-ga';
+
+const options = {
+	autoConfig: true, 	// set pixel's autoConfig
+    debug: false, 		// enable logs
+};
+ReactPixel.init('1012757025828167', options);
+
+ReactPixel.pageView();
+
+
+ReactGA.initialize('UA-166323214-2');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends React.Component {
 
@@ -22,8 +36,8 @@ class App extends React.Component {
         { title: 'Contact', path: '/' },
       ],
       home: {
-        title: 'Be Relentless',
-        subTitle: 'Projects that make a diffrence',
+        title: 'Hero',
+        subTitle: '--------------',
         text: 'Checkout my projects below'
       },
       about: {

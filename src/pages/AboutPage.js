@@ -2,6 +2,9 @@ import React from 'react';
 
 import Hero from '../components/Hero';
 import AboutContent from '../components/AboutContent';
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-166323214-2');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function AboutPage(props) {
 
