@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 
-const AboutContent = (props) => {
+const Layout = (props) => {
     return (
         <Container fluid={true}>
             <Row className="justify-content-center">
@@ -13,4 +13,4 @@ const AboutContent = (props) => {
     )
 }
 
-export default AboutContent
+export default Layout

@@ -4,10 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 import Hero from '../components/Hero';
-import AboutContent from '../components/AboutContent';
-import ReactGA from 'react-ga';
-ReactGA.initialize('UA-166323214-2');
-ReactGA.pageview(window.location.pathname + window.location.search);
+import AboutContent from '../components/Layout';
 
 class ContactPage extends React.Component {
     constructor(props) {

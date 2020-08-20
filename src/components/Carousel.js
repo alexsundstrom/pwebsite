@@ -3,7 +3,7 @@ import React from 'react';
 import Card from '../components/Card';
 import engramLogo from '../images/engramLogo.png';
 import lbLogo from '../images/lbLogo.png';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, } from 'react-bootstrap';
 
 class Carousel extends React.Component {
 
@@ -25,7 +25,7 @@ class Carousel extends React.Component {
                     title: 'LimitBreak',
                     subTitle: '',
                     imgSrc: lbLogo,
-                    link: 'https://pinttap.limitbreak.com',
+                    link: 'http://limitbreak.pinttap.com',
                     selected: false
 
                 }
@@ -60,7 +60,9 @@ class Carousel extends React.Component {
         return(
             <Container fluid={true}>
                 <Row className="justify-content-center">
+                    
                 {this.makeItems(this.state.items)}
+                    
                 </Row>
             </Container>
         );
