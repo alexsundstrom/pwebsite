@@ -14,10 +14,10 @@ import Carousel from '../components/Carousel';
 // }
 
 
-const HomePage = () => {
+const HomePage = (props) => {
     return (
         <div>
-        <Hero />
+        <Hero title={props.title} />
         <Carousel />
             
         </div>

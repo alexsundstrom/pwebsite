@@ -5,7 +5,7 @@ import Cardinfo from '../components/Cardinfo';
 const Card = (props) => {
     return ( 
         <div className="d-inline-block card-container" onClick={(e) => props.click(props.item)}>
-            <img className="card-img" style={{width: "500px"}} src={props.item.imgSrc} alt ={props.item.imgSrc}/>
+            <img className="card-img" style={{width: "23rem"}} src={props.item.imgSrc} alt ={props.item.imgSrc}/>
             { props.item.selected && <Cardinfo title={props.item.title} subTitle={props.item.subTitle} link={props.item.link}  /> }
         </div>
     )

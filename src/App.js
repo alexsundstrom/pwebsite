@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import ReactPixel from 'react-facebook-pixel';
 import ReactGA from 'react-ga';
 
-
 import NavigationBar from './components/NavigationBar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -25,20 +24,23 @@ ReactGA.initialize('UA-166323214-2');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 
-const App = () => {
+const App = (props) => {
+
   return (
     <React.Fragment>
             <Router>
-              <NavigationBar />
+            <NavigationBar />
+              
+              
                 <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route path="/about" component={AboutPage} />
                 <Route path="/contact" component={ContactPage} />
                 <Route path='*' component={errorPage} />
                 </Switch>
+                       
+           
               <Footer />
-              
-    
             </Router>
     </React.Fragment>
   )

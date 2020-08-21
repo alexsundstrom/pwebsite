@@ -1,14 +1,13 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 
 const Layout = (props) => {
     return (
-        <Container fluid={true}>
-            <Row className="justify-content-center">
-                <Col md={8}>
+        <Container>
+            
+               
                  {props.children}
-                </Col>
-            </Row>
+                
         </Container>
     )
 }
