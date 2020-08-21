@@ -2,22 +2,13 @@ import React from 'react';
 
 import Hero from '../components/Hero';
 import Carousel from '../components/Carousel';
-
-// function HomePage() {
-
-//     return(
-//         <div>
-//         <Hero />
-//         <Carousel />
-//         </div>
-//     );
-// }
+ 
 
 
-const HomePage = (props) => {
+const HomePage = () => {
     return (
-        <div>
-        <Hero title={props.title} />
+        <div style={{height: "100vh"}}>
+        <Hero />
         <Carousel />
             
         </div>

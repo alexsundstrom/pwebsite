@@ -41,9 +41,8 @@ class ContactPage extends React.Component {
 
         return(
 
-            <div>
+            <div style={{height: "100vh"}}>
 
-            <Hero title={this.props.title} />
 
             <AboutContent>
                 <Form onSubmit={this.handleSubmit}>

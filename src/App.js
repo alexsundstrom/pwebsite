@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import ReactPixel from 'react-facebook-pixel';
@@ -45,30 +45,6 @@ const App = (props) => {
     </React.Fragment>
   )
 }
-
-
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       title: "Alexander Sundström",
-//       headerLinks: [
-//         { title: 'Home', path: '/' },
-//         { title: 'About', path: '/' },
-//         { title: 'Contact', path: '/' },
-//       ],
-//       home: {
-//         title: 'Under Development',
-//         subTitle: '------------------------------',
-//         text: 'Checkout my projects below'
-//       },
-//       about: {
-//         title: 'About Me'
-//       },
-//       contact: {
-//         title: 'Lets Talk'
-//       },
-//     }
-//   }
 
 
 export default App;
