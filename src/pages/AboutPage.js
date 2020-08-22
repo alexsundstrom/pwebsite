@@ -1,12 +1,11 @@
 import React from 'react';
 
-import Hero from '../components/Hero';
 import AboutContent from '../components/Layout';
 
 function AboutPage(props) {
 
     return(
-        <div style={{height: "75vh"}}>
+        <div style={{height: "77vh"}}>
             <AboutContent>
                 <br />
                 <h1 style={{paddingTop: "20px", paddingLeft: "40px"}}>About me</h1>

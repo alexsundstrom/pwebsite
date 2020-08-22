@@ -21,9 +21,9 @@ const NavigationBar = () => {
     return (
       <NavbarStylesWrapper>
         <Navbar className="border-bottom" bg="transparent" expand="md">
-          <Navbar.Brand href="/">Alexander Sundström</Navbar.Brand>
+          <Navbar.Brand href="/">Alex</Navbar.Brand>
           <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
-          <Navbar.Collapse id="navbar-toggle">
+          <Navbar.Collapse className="" id="navbar-toggle">
             <Nav className="ml-auto">
               <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
               <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>

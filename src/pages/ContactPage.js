@@ -1,9 +1,7 @@
 import React from 'react';
-
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-import Hero from '../components/Hero';
 import AboutContent from '../components/Layout';
 
 class ContactPage extends React.Component {
@@ -41,10 +39,15 @@ class ContactPage extends React.Component {
 
         return(
 
-            <div style={{height: "100vh"}}>
+            <div style={{height: "77vh"}}>
+                
 
-
-            <AboutContent>
+            <AboutContent><br />
+                <h1 style={{paddingTop: "20px", paddingLeft: "40px"}}>Let´s Talk!</h1>
+                <br />
+                <br />
+                <br />
+                <br />
                 <Form onSubmit={this.handleSubmit}>
                     <Form.Group>
                         <Form.Label htmlFor="full-name">Full Name</Form.Label>
