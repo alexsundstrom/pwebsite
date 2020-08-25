@@ -3,13 +3,20 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import ReactPixel from 'react-facebook-pixel';
 import ReactGA from 'react-ga';
+import TagManager from 'react-gtm-module'
 
 import NavigationBar from './components/NavigationBar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
-import errorPage from './pages/errorPage';
+import errorPage from './pages/errorPage'; 
+
+const tagManagerArgs = {
+    gtmId: 'GTM-WHKS42R'
+};
+ 
+TagManager.initialize(tagManagerArgs);
 
 const options = {
 	autoConfig: true, 	// set pixel's autoConfig
@@ -22,6 +29,7 @@ ReactPixel.pageView();
 
 ReactGA.initialize('UA-166323214-2');
 ReactGA.pageview(window.location.pathname + window.location.search);
+
 
 
 const App = (props) => {
