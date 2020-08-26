@@ -1,18 +1,31 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import emailjs from 'emailjs-com';
+import styled from 'styled-components';
+
 
 import AboutContent from '../components/Layout';
 
+const SuccessMsg = styled.p`
+    color: green;
+    padding: 15px 10px;
+`;
+const ErrorMsg = styled.p`
+    color: red;
+    padding: 15px 10px;
+`;
+
+
 class ContactPage extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             name: '',
             email: '',
             message: '',
-            disabled: 'false',
-            emailSent: 'null',
+            disabled: false,
+            emailSent: null
         }
     }
 
@@ -28,10 +41,18 @@ class ContactPage extends React.Component {
     }
 
     handleSubmit = (event) => {
+        console.log(this.state)
         event.preventDefault();
-
+        emailjs.sendForm("gmail", "template_H3kE46Ns", "#contactForm", "user_4jWQXwXmqidAbq0vTw2YC").then().catch(err => {
+            this.state({
+                disabled: false,
+                emailSent: false
+            })
+        })
+        
         this.setState({
-            disabled: true
+            disabled: true,
+            emailSent: true
         });
     }
 
@@ -42,16 +63,17 @@ class ContactPage extends React.Component {
             <div style={{height: "77vh"}}>
                 
 
-            <AboutContent><br />
+            <AboutContent>
+                <br />
                 <h1 style={{paddingTop: "20px", paddingLeft: "40px"}}>Let´s Talk!</h1>
                 <br />
                 <br />
                 <br />
                 <br />
-                <Form onSubmit={this.handleSubmit}>
+                <form id="contactForm" onSubmit={this.handleSubmit}>
                     <Form.Group>
-                        <Form.Label htmlFor="full-name">Full Name</Form.Label>
-                        <Form.Control id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange} />
+                        <Form.Label htmlFor="name">Full Name</Form.Label>
+                        <Form.Control id="name" name="name" type="text" value={this.state.name} onChange={this.handleChange} />
                     </Form.Group>
 
                     <Form.Group>
@@ -68,10 +90,10 @@ class ContactPage extends React.Component {
                         Send
                     </Button>
 
-                    {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
-                    {this.state.emailSent === false && <p className="d-inline error-msg">Email not Sent</p>}
+                    {this.state.emailSent === true && <SuccessMsg className="d-inline success-msg">Email Sent</SuccessMsg>}
+                    {this.state.emailSent === false && <ErrorMsg className="d-inline err-msg">Email Not Sent</ErrorMsg>}
 
-                </Form>
+                </form>
             </AboutContent>
             </div>
     );
