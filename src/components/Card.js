@@ -1,6 +1,6 @@
 import React from 'react'
 import Cardinfo from '../components/Cardinfo';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
 
 const Card = (props) => {
@@ -18,3 +18,5 @@ const Card = (props) => {
 
 
 export default Card;
+
+

@@ -1,21 +1,32 @@
 import React from 'react';
+import Image from 'react-bootstrap/Image'
+import {Row, Col } from 'react-bootstrap';
 
+import portfolioAvatar from '../images/portfolioAvatar.jpg';
 import AboutContent from '../components/Layout';
 
 function AboutPage(props) {
 
     return(
-        <div style={{height: "77vh"}}>
+        <div style={{}}>
+            <Row className="text-center pt-5">
+                   <Col md={6} xs={12} className="">
+                  <Image src={portfolioAvatar} thumbnail/>
+                  <h1 className="pb-2">About Me</h1> 
+                    </Col>
+               </Row>
             <AboutContent>
-                <br />
-                <h1 style={{paddingTop: "20px", paddingLeft: "40px"}}>About me</h1>
-                <br />
-                <br />
-                <br />
-                <br />
-                <p>Hello, my name is Alexander. I am currently studying to become a webdeveloper I have always had a interest in developing and my goal is to work with webdeveloping in the future. </p>
-                <p> I am 29 years old and in my freetime I spend most of my time playing pc games, playing with my daughter or hanging out with friends & family  </p>          
+                
+                 
+                 <Col xs={12}>
+                      <p>Hello!</p>
+                      <p>My name is Alexander. I am currently studying webdevelopment, some of the languages we are learning are the basic HTML, CSS and also JavaScript and PHP.</p>
+                      <p>I do enjoy programming quite alot, so far my favorite has been React Library</p> 
+                      <p> I am 29 years old, and when I am not programming I usually play Padel, video-games or hit the gym.</p> 
+                </Col>
+                
             </AboutContent>
+            
 
         </div>
     );

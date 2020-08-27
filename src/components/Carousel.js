@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../components/Card';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row} from 'react-bootstrap';
 
 import engramLogo from '../images/engramLogo.png';
 import githubLogo from '../images/githubLogo.png';
