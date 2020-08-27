@@ -7,7 +7,7 @@ import Carousel from '../components/Carousel';
 
 const HomePage = () => {
     return (
-        <div style={{height: "100vh"}}>
+        <div style={{}}>
         <Hero />
         <Carousel />
             

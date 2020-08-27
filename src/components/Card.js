@@ -1,13 +1,16 @@
 import React from 'react'
 import Cardinfo from '../components/Cardinfo';
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 const Card = (props) => {
     return ( 
-        <div className="d-inline-block card-container" onClick={(e) => props.click(props.item)}>
-            <img className="card-img" style={{width: "23rem"}} src={props.item.imgSrc} alt ={props.item.imgSrc}/>
+        <Col className=" border" md={4} onClick={(e) => props.click(props.item)}>
+           
+            <img className="card-img" style={{}} src={props.item.imgSrc} alt ={props.item.imgSrc}/>
+            
             { props.item.selected && <Cardinfo title={props.item.title} subTitle={props.item.subTitle} link={props.item.link}  /> }
-        </div>
+        </Col>
     )
 }
 

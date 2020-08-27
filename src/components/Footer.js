@@ -13,16 +13,16 @@ function Footer() {
             <Container fluid={true}>
                 <Row className="border-top p-3">
                         <Col className="p-0" md={11} xs={6}>
-                        <FontAwesomeIcon icon={['fab', 'linkedin']} size="lg" />
-                        
+                        <a rel="noopener noreferrer" target="_blank" className="text-dark" href="https://github.com/alexsundstrom"><FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />
+                        </a>
                         </Col>
                         <Col className="p-0" md={1} xs={6}>
                         ©Alexander 2020
                         </Col>
                     
                         <Col className="p-0" md={4} xs={1}>
-                        <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
-                        
+                        <a rel="noopener noreferrer" target="_blank" className="text-dark" href="https://github.com/alexsundstrom"> <FontAwesomeIcon icon={['fab', 'github']} size="2x" />
+                        </a>
                         </Col>
                         
                 </Row>

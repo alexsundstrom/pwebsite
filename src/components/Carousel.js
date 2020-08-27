@@ -1,9 +1,10 @@
 import React from 'react';
-
 import Card from '../components/Card';
+import { Container, Row, Col } from 'react-bootstrap';
+
 import engramLogo from '../images/engramLogo.png';
+import githubLogo from '../images/githubLogo.png';
 import lbLogo from '../images/lbLogo.png';
-import { Container, Row, } from 'react-bootstrap';
 
 class Carousel extends React.Component {
 
@@ -28,6 +29,14 @@ class Carousel extends React.Component {
                     link: 'http://limitbreak.pinttap.com',
                     selected: false
 
+                },
+                {
+                    id: 2,
+                    title: 'Github',
+                    subTitle: '',
+                    imgSrc: githubLogo,
+                    link: 'https://github.com/alexsundstrom',
+                    selected: false
                 }
             ]
 
@@ -59,10 +68,10 @@ class Carousel extends React.Component {
     render() {
         return(
             <Container fluid={true}>
-                <Row className="justify-content-center">
+                <Row className="" md={6}>
                     
                 {this.makeItems(this.state.items)}
-                    
+                
                 </Row>
             </Container>
         );
