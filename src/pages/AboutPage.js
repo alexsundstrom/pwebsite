@@ -8,6 +8,7 @@ import AboutContent from '../components/Layout';
 function AboutPage(props) {
 
     return(
+        <div style={{height: "75vh"}}>
         <AboutContent >
        
             <Row className="text-center pt-5">
@@ -27,7 +28,7 @@ function AboutPage(props) {
                 </Col>
                 
             </AboutContent>
-            
+            </div>
 
         
     );
