@@ -11,7 +11,7 @@ function AboutPage(props) {
         <AboutContent >
        
             <Row className="text-center pt-5">
-                   <Col md={3} xs={11} className="">
+                   <Col md={3} xs={11} className="pr-5">
                   <Image src={portfolioAvatar} thumbnail/>
                   <h1 className="pb-2">About Me</h1> 
                     </Col>
