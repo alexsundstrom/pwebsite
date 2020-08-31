@@ -2,16 +2,18 @@ import React from 'react';
 
 import Hero from '../components/Hero';
 import Carousel from '../components/Carousel';
+import AboutContent from '../components/Layout';
  
 
 
 const HomePage = () => {
     return (
-        <div style={{}}>
+        <>
         <Hero />
+        <AboutContent>
         <Carousel />
-            
-        </div>
+        </AboutContent>
+        </>
     )
 }
 
