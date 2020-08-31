@@ -8,14 +8,15 @@ import AboutContent from '../components/Layout';
 function AboutPage(props) {
 
     return(
-        <div style={{}}>
+        <AboutContent >
+       
             <Row className="text-center pt-5">
-                   <Col md={6} xs={12} className="">
+                   <Col md={3} xs={11} className="">
                   <Image src={portfolioAvatar} thumbnail/>
                   <h1 className="pb-2">About Me</h1> 
                     </Col>
                </Row>
-            <AboutContent>
+      
                 
                  
                  <Col xs={12}>
@@ -28,7 +29,7 @@ function AboutPage(props) {
             </AboutContent>
             
 
-        </div>
+        
     );
 }
 
