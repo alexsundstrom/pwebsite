@@ -49,7 +49,7 @@ const App = (props) => {
                 </Switch>
                        
            
-              <Footer />
+            <Footer />
             </Router>
     </React.Fragment>
   )

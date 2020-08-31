@@ -1,22 +1,31 @@
 import React from 'react';
 import TypeIt from 'typeit-react';
+import styled from 'styled-components';
+
+
+
+const HeroTextStyle = styled.div`
+    text-align: center;
+
+`;
+
 
 const Hero = () => {
     return (
-        <div style={{marginBottom: "10px",}} className="pt-5 px-5 mb-5 border-bottom App">
+        <HeroTextStyle style={{marginBottom: "10px",}} className="pt-5 px-5 mb-5 border-bottom App">
         <TypeIt
-        style={{}}
+        style={{fontWeight: "bold"}}
         element={"h1"}
         options={{
         loop: false,
         strings: ["Alexander Sundström"],
-        speed: 250,
+        speed: 150,
         waitUntilVisible: true,
         }}
     />
     <br />
         <TypeIt
-        style={{}}
+        style={{fontWeight: "bold"}}
         element={"h2"}
         options={{
         loop: false,
@@ -26,7 +35,7 @@ const Hero = () => {
         }}
     />
         
-      </div>
+      </HeroTextStyle>
     )
 }
 

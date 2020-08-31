@@ -15,7 +15,7 @@ class Carousel extends React.Component {
                 {
                     id: 0,
                     title: 'Engram',
-                    subTitle: '',
+                    subTitle: 'Social media webapplication me and a few classmates did for a project in school.',
                     imgSrc: engramLogo,
                     link: 'https://engram.alexsundstrom.com/login',
                     selected: false
@@ -24,7 +24,7 @@ class Carousel extends React.Component {
                 {
                     id: 1,
                     title: 'LimitBreak',
-                    subTitle: '',
+                    subTitle: 'A WordPress site me and a couple of classmates did for a school project.',
                     imgSrc: lbLogo,
                     link: 'http://limitbreak.pinttap.com',
                     selected: false
@@ -33,7 +33,7 @@ class Carousel extends React.Component {
                 {
                     id: 2,
                     title: 'Github',
-                    subTitle: '',
+                    subTitle: 'Check out my Repos!',
                     imgSrc: githubLogo,
                     link: 'https://github.com/alexsundstrom',
                     selected: false
